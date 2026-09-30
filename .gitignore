@@ -1,0 +1,61 @@
+# =============================================================================
+#  CH585D_Board_Test  -  Git ignore rules
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+#  WCH official CH585 example SDK
+#  Kept in the working tree as local reference material only; deliberately NOT
+#  tracked, so the repository stays small and contains only this project's code.
+# -----------------------------------------------------------------------------
+EXAM/
+
+# -----------------------------------------------------------------------------
+#  Build output
+#  WCH / MounRiver Studio projects emit every intermediate and final artifact
+#  into a per-project `obj/` directory, so ignoring it is sufficient.
+#  NOTE: `*.hex` is deliberately NOT ignored globally, because the BLE ROM
+#  firmware images shipped under `LIB/` are real source assets required for
+#  linking/flashing (e.g. CH585BLE_ROMx.hex).
+# -----------------------------------------------------------------------------
+obj/
+Debug/
+Release/
+
+# Stray artefacts, in case a build ever writes outside `obj/`
+*.o
+*.d
+*.su
+*.elf
+*.map
+*.lst
+*.bin
+
+# -----------------------------------------------------------------------------
+#  IDE / toolchain session state  (machine-local, not part of the project)
+# -----------------------------------------------------------------------------
+.mrs/
+*.mrs-workspace
+*-.snapshot
+.wvproj.user
+
+# -----------------------------------------------------------------------------
+#  Editors
+# -----------------------------------------------------------------------------
+.vscode/
+.idea/
+*.bak
+*~
+
+# -----------------------------------------------------------------------------
+#  Operating-system junk
+# -----------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -----------------------------------------------------------------------------
+#  Never ignore: prebuilt vendor ROM images and link-time libraries
+#  (negations must come last)
+# -----------------------------------------------------------------------------
+!CH585D/LIB/*.hex
+!**/*.a

@@ -1,0 +1,11 @@
+# Ensure binary assets are never line-ending converted or diffed as text.
+*.a        binary
+*.hex      binary
+*.bin      binary
+*.elf      binary
+*.PDF      binary
+*.pdf      binary
+*.xcl      binary
+
+# Prebuilt vendor ROM images under LIB/ are real assets, keep raw.
+CH585D/LIB/*.hex      binary

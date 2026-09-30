@@ -1,0 +1,62 @@
+MIT License
+
+Copyright (c) 2026 Fly_Dog (GitHub: flydog555)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+SCOPE OF THIS LICENSE  /  许可证适用范围
+================================================================================
+
+The MIT License above applies ONLY to the original application code written for
+this project, namely the files under:
+
+    CH585D/src/
+
+上述 MIT 许可证仅适用于本项目的原创应用层代码，即 `CH585D/src/` 目录下的文件。
+
+--------------------------------------------------------------------------------
+THIRD-PARTY CODE  /  第三方代码
+--------------------------------------------------------------------------------
+
+This repository also contains code and binary libraries that are the
+copyrighted property of Nanjing Qinheng Microelectronics Co., Ltd. (WCH).
+They are NOT covered by the MIT License above and remain subject to WCH's own
+copyright and terms of use. They are included here solely for use with
+microcontrollers manufactured by WCH.
+
+本仓库同时包含南京沁恒微电子（WCH）拥有版权的代码与二进制库，它们**不在**上述
+MIT 许可证的覆盖范围内，仍遵循沁恒微电子原有的版权与使用条款，此处仅用于沁恒
+微控制器产品的开发。涉及目录包括但不限于：
+
+    CH585D/StdPeriphDriver/      WCH 标准外设驱动库
+    CH585D/RVMSIS/               RISC-V 内核头文件
+    CH585D/Startup/              启动汇编
+    CH585D/HAL/                  板级硬件抽象层
+    CH585D/LIB/                  BLE 协议栈库与 ROM 固件镜像
+
+The WCH official CH585 evaluation-board example package (EXAM/) is NOT part of
+this repository.
+
+沁恒官方 CH585 评估板例程包（EXAM/）不包含在本仓库中。
+
+Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
+Attention: This software (modified or not) and binary are used for
+microcontroller manufactured by Nanjing Qinheng Microelectronics.
+================================================================================
